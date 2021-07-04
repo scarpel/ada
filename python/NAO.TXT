@@ -1,0 +1,60 @@
+<div class="row mt-5 default_Small">
+							<div class="col-12 col-lg-12 widget-header">
+                    <span class="divisor"></span>
+					                        <a href="https://www.infomoney.com.br/onde-investir/" target="_blank">
+                            <h2>Onde Investir</h2>
+                            <i class="material-icons">arrow_forward</i>
+                        </a>
+                        				</div>
+									<div class="col-12">
+						<div class="row container-items">
+						                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4 img-container order-2 order-lg-1">
+                                            <a href="https://www.infomoney.com.br/onde-investir/bolhas-de-ativos-preocupam-investidor-de-credito-mais-que-covid-na-europa/" title="Bolhas de ativos preocupam investidor de crédito mais que Covid na Europa" target="_blank">
+                                            <figure>
+                                            	                                                <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/bolha.jpg?resize=755%2C423&amp;quality=70&amp;strip=all" class="img-fluid jetpack-lazy-image jetpack-lazy-image--handled" alt="bolha" loading="eager" title="bolha" srcset="https://www.infomoney.com.br/wp-content/uploads/2019/06/bolha.jpg?w=360&amp;quality=70&amp;strip=all 360w, https://www.infomoney.com.br/wp-content/uploads/2019/06/bolha.jpg?w=755&amp;quality=70&amp;strip=all 755w" data-lazy-loaded="1" sizes="(max-width:320px) 145px, (max-width:425px) 220px, 500px" width="755" height="423">                                            </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-lg-8 d-flex flex-column justify-content-center pb-3 pb-lg-0 order-1 order-lg-2">
+                                                                                            <span class="hl-hat">Pesquisa do BofA</span>
+                                                                                            <span class="hl-title hl-title-3">
+                                                <a href="https://www.infomoney.com.br/onde-investir/bolhas-de-ativos-preocupam-investidor-de-credito-mais-que-covid-na-europa/" title="Bolhas de ativos preocupam investidor de crédito mais que Covid na Europa" target="_blank">Bolhas de ativos preocupam investidor de crédito mais que Covid na Europa</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+																<div class="col-12 col-lg-6 item">
+																			<span class="hl-hat">Cobertura</span>
+																			<span class="hl-title hl-title-4">
+										<a href="https://www.infomoney.com.br/onde-investir/fgc-desembolsou-r-844-mi-em-garantias-em-2020-tempo-medio-de-pagamento-caiu-de-10-para-2-dias-uteis/" title="FGC desembolsou R$ 844 mi em garantias em 2020; tempo médio de pagamento caiu de 10 para 2 dias úteis" target="_blank">FGC desembolsou R$ 844 mi em garantias em 2020; tempo médio de pagamento caiu de 10 para 2 dias úteis</a>
+									</span>
+								</div>
+																<div class="col-12 col-lg-6 item">
+																			<span class="hl-hat">Gestor do Verde</span>
+																			<span class="hl-title hl-title-4">
+										<a href="https://www.infomoney.com.br/onde-investir/stuhlberger-preve-minieuforia-econonomica-com-avanco-da-vacinacao-mas-alerta-para-risco-populista-na-eleicao-de-2022/" title="Stuhlberger prevê 'minieuforia econômica' com vacinação, mas alerta para risco populista na eleição de 2022" target="_blank">Stuhlberger prevê 'minieuforia econômica' com vacinação, mas alerta para risco populista na eleição de 2022</a>
+									</span>
+								</div>
+														</div>
+					</div>
+							</div>
+;cut;
+<li class="term-river-grid__wrapper___fTw9V with-image" role="list-item">			<figure class="term-river-grid__figure___11iky">
+			<a class="term-river-grid__thumbnail___k0oqa" href="https://www.sciencenews.org/article/earth-land-ecosystems-ecology-intact-species">
+				<img src="https://www.sciencenews.org/wp-content/uploads/2021/04/041421_jl_ecologically-intact_feat-330x186.jpg" class="attachment-thumbnail size-thumbnail" alt="Wildebeest herd" loading="lazy" srcset="https://www.sciencenews.org/wp-content/uploads/2021/04/041421_jl_ecologically-intact_feat-330x186.jpg 330w, https://www.sciencenews.org/wp-content/uploads/2021/04/041421_jl_ecologically-intact_feat-680x383.jpg 680w, https://www.sciencenews.org/wp-content/uploads/2021/04/041421_jl_ecologically-intact_feat-800x450.jpg 800w, https://www.sciencenews.org/wp-content/uploads/2021/04/041421_jl_ecologically-intact_feat-768x432.jpg 768w, https://www.sciencenews.org/wp-content/uploads/2021/04/041421_jl_ecologically-intact_feat.jpg 1030w" sizes="(max-width: 330px) 100vw, 330px" width="330" height="186">			</a>
+		</figure>
+	
+	<div class="content">
+		
+		<!-- The post title -->
+		<h3 class="term-river-grid__title___2Gm-_">
+			<a href="https://www.sciencenews.org/article/earth-land-ecosystems-ecology-intact-species">
+				Only 3 percent of Earth’s land hasn’t been marred by humans			</a>
+		</h3>
+
+		
+					<div class="term-river-grid__meta___BARqt">
+				By <span class="term-river-grid__byline___2xYH5 author vcard"><a class="byline-link url fn n" href="https://www.sciencenews.org/author/jonathan-lambert">Jonathan Lambert</a></span><time class="term-river-grid__date___1mM6f entry-date published" datetime="2021-04-15T01:00:00-04:00">April 15, 2021</time>			</div>
+			</div>
+</li>

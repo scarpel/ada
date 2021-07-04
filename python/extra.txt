@@ -1,0 +1,198 @@
+<div class="c-entry-box--compact c-entry-box--compact--article" data-chorus-optimize-id="22170460" data-chorus-optimize-module="entry-box" data-analytics-placement="river:6" style="">
+  
+    <a aria-hidden="true" tabindex="-1" href="https://www.theverge.com/2021/4/27/22406419/verizon-southern-california-outage-down-phone-calls" class="c-entry-box--compact__image-wrapper" data-analytics-link="article:image">
+      
+        <div class="c-entry-box--compact__image">
+          
+<img class="c-dynamic-image  lazy-image lazy-image lazy-loaded lazy-loaded" alt="" data-chorus-optimize-field="main_image" src="https://cdn.vox-cdn.com/thumbor/Dq-st4ggOcFwnwaV8svfRjIUmSA=/0x156:3000x1844/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69195325/acastro_200109_1777_verizon_0004.0.0.jpg" data-cid="site/dynamic_size_image-1619560869_6104_94759" data-cdata="{&quot;image_id&quot;:69195325,&quot;ratio&quot;:&quot;*&quot;}">
+<noscript><img alt="" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/69195325/acastro_200109_1777_verizon_0004.0.0.jpg"></noscript>
+
+        </div>
+      
+      
+      
+      
+    </a>
+  
+  <div class="c-entry-box--compact__body">
+    
+    
+    
+    <h2 class="c-entry-box--compact__title"><a data-chorus-optimize-field="hed" data-analytics-link="article" href="https://www.theverge.com/2021/4/27/22406419/verizon-southern-california-outage-down-phone-calls">Verizon confirms there are problems with phone calls in Southern California</a></h2>
+    
+    
+    
+      
+        <div class="c-byline" data-cid="site/byline-1619560869_7147_94761" data-cdata="{&quot;timestamp&quot;:1619557890}">
+  <span class="c-byline-wrapper">
+    
+      By
+      <span class="c-byline__item">
+        
+          
+          <a href="https://www.theverge.com/authors/jay-peters" data-analytics-link="author-name"><span class="c-byline__author-name">Jay Peters</span></a>
+        
+      </span>
+      
+      <span class="c-byline__item">
+        
+        <time class="c-byline__item" data-ui="timestamp" data-relative-timestamp="true" datetime="2021-04-27T21:11:30">55 minutes ago</time>
+      </span>
+      
+      
+      
+    
+    
+  </span>
+  <span class="c-byline__gear">
+    <a data-entry-admin="22170460" data-cid="tools/entry_admin_button-1619560869_2795_94760" data-cdata="{&quot;id&quot;:22170460}"></a>
+
+  </span>
+</div>
+
+
+      
+    
+    
+    
+
+    
+  </div>
+
+  
+
+  
+</div>
+;cut;
+<div class="c-entry-box--compact c-entry-box--compact--article" data-chorus-optimize-id="22170460" data-chorus-optimize-module="entry-box" data-analytics-placement="river:6" style="">
+  
+    <a aria-hidden="true" tabindex="-1" href="https://www.theverge.com/2021/4/27/22406419/verizon-southern-california-outage-down-phone-calls" class="c-entry-box--compact__image-wrapper" data-analytics-link="article:image">
+      
+        <div class="c-entry-box--compact__image">
+          
+<img class="c-dynamic-image  lazy-image lazy-image lazy-loaded lazy-loaded" alt="" data-chorus-optimize-field="main_image" src="https://cdn.vox-cdn.com/thumbor/Dq-st4ggOcFwnwaV8svfRjIUmSA=/0x156:3000x1844/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69195325/acastro_200109_1777_verizon_0004.0.0.jpg" data-cid="site/dynamic_size_image-1619560869_6104_94759" data-cdata="{&quot;image_id&quot;:69195325,&quot;ratio&quot;:&quot;*&quot;}">
+<noscript><img alt="" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/69195325/acastro_200109_1777_verizon_0004.0.0.jpg"></noscript>
+
+        </div>
+      
+      
+      
+      
+    </a>
+  
+  <div class="c-entry-box--compact__body">
+    
+    
+    
+    <h2 class="c-entry-box--compact__title"><a data-chorus-optimize-field="hed" data-analytics-link="article" href="https://www.theverge.com/2021/4/27/22406419/verizon-southern-california-outage-down-phone-calls">Verizon confirms there are problems with phone calls in Southern California</a></h2>
+    
+    
+    
+      
+        <div class="c-byline" data-cid="site/byline-1619560869_7147_94761" data-cdata="{&quot;timestamp&quot;:1619557890}">
+  <span class="c-byline-wrapper">
+    
+      By
+      <span class="c-byline__item">
+        
+          
+          <a href="https://www.theverge.com/authors/jay-peters" data-analytics-link="author-name"><span class="c-byline__author-name">Jay Peters</span></a>
+        
+      </span>
+      
+      <span class="c-byline__item">
+        
+        <time class="c-byline__item" data-ui="timestamp" data-relative-timestamp="true" datetime="2021-04-27T21:11:30">55 minutes ago</time>
+      </span>
+      
+      
+      
+    
+    
+  </span>
+  <span class="c-byline__gear">
+    <a data-entry-admin="22170460" data-cid="tools/entry_admin_button-1619560869_2795_94760" data-cdata="{&quot;id&quot;:22170460}"></a>
+
+  </span>
+</div>
+
+
+      
+    
+    
+    
+
+    
+  </div>
+
+  
+
+  
+</div>
+;cut;
+<div class="c-entry-box--compact c-entry-box--compact--article" data-chorus-optimize-id="22170460" data-chorus-optimize-module="entry-box" data-analytics-placement="river:6" style="">
+  
+    <a aria-hidden="true" tabindex="-1" href="https://www.theverge.com/2021/4/27/22406419/verizon-southern-california-outage-down-phone-calls" class="c-entry-box--compact__image-wrapper" data-analytics-link="article:image">
+      
+        <div class="c-entry-box--compact__image">
+          
+<img class="c-dynamic-image  lazy-image lazy-image lazy-loaded lazy-loaded" alt="" data-chorus-optimize-field="main_image" src="https://cdn.vox-cdn.com/thumbor/Dq-st4ggOcFwnwaV8svfRjIUmSA=/0x156:3000x1844/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69195325/acastro_200109_1777_verizon_0004.0.0.jpg" data-cid="site/dynamic_size_image-1619560869_6104_94759" data-cdata="{&quot;image_id&quot;:69195325,&quot;ratio&quot;:&quot;*&quot;}">
+<noscript><img alt="" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/69195325/acastro_200109_1777_verizon_0004.0.0.jpg"></noscript>
+
+        </div>
+      
+      
+      
+      
+    </a>
+  
+  <div class="c-entry-box--compact__body">
+    
+    
+    
+    <h2 class="c-entry-box--compact__title"><a data-chorus-optimize-field="hed" data-analytics-link="article" href="https://www.theverge.com/2021/4/27/22406419/verizon-southern-california-outage-down-phone-calls">Verizon confirms there are problems with phone calls in Southern California</a></h2>
+    
+    
+    
+      
+        <div class="c-byline" data-cid="site/byline-1619560869_7147_94761" data-cdata="{&quot;timestamp&quot;:1619557890}">
+  <span class="c-byline-wrapper">
+    
+      By
+      <span class="c-byline__item">
+        
+          
+          <a href="https://www.theverge.com/authors/jay-peters" data-analytics-link="author-name"><span class="c-byline__author-name">Jay Peters</span></a>
+        
+      </span>
+      
+      <span class="c-byline__item">
+        
+        <time class="c-byline__item" data-ui="timestamp" data-relative-timestamp="true" datetime="2021-04-27T21:11:30">55 minutes ago</time>
+      </span>
+      
+      
+      
+    
+    
+  </span>
+  <span class="c-byline__gear">
+    <a data-entry-admin="22170460" data-cid="tools/entry_admin_button-1619560869_2795_94760" data-cdata="{&quot;id&quot;:22170460}"></a>
+
+  </span>
+</div>
+
+
+      
+    
+    
+    
+
+    
+  </div>
+
+  
+
+  
+</div>
+;cut;

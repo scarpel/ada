@@ -1,0 +1,50 @@
+<div class="c-byline">
+  <span class="c-byline-wrapper">
+    
+      By
+      <span class="c-byline__item">
+        
+          
+          <a href="https://www.theverge.com/authors/mariya-abdulkaf" data-analytics-link="author-name"><span class="c-byline__author-name">Mariya Abdulkaf</span></a>
+        
+      </span>
+      
+      
+      
+    
+    
+  </span>
+  <span class="c-byline__gear">
+    <a data-entry-admin="22167905" data-cid="tools/entry_admin_button-1619561133_1234_83689" data-cdata="{&quot;id&quot;:22167905}"></a>
+
+  </span>
+</div>
+;cut;
+<div class="c-byline">
+  <span class="c-byline-wrapper">
+    
+      By
+      <span class="c-byline__item">
+        
+          
+          <a href="https://www.theverge.com/authors/mariya-abdulkaf" data-analytics-link="author-name"><span class="c-byline__author-name">Mariya Abdulkaf</span></a>
+        
+      </span>
+      
+      
+      
+    
+    
+  </span>
+  <span class="c-byline__gear">
+    <a data-entry-admin="22167905" data-cid="tools/entry_admin_button-1619561133_1234_83689" data-cdata="{&quot;id&quot;:22167905}"></a>
+
+  </span>
+</div>
+;cut;
+<div class="_cta"><a class="ds-link-with-arrow-icon ds-link-with-arrow-icon--heavy" href="/espresso" data-analytics="daily_briefing_promo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="icon-link-arrow" fill="none" fill-rule="evenodd"><path class="path-background" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1zm.142 4.5l-1.008 1.062c3.33 3.276 4.194 4.14 4.608 4.5-1.602-.018-3.168-.018-10.242-.018v1.584c7.074 0 8.73 0 10.242-.018-.432.36-1.314 1.206-4.608 4.536l1.008 1.044 6.354-6.354L12.142 5.5z" fill="#2E45B8" fill-rule="nonzero"></path></g></svg><span>Start reading</span></a></div>
+;cut;
+<div class="_container"><div class=" css-56ss3e enj2bkd0"><div class="_ident"><svg width="96" height="96" viewBox="0 0 96 96"><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M45.614 66.567c-15.289 0-27.683-12.124-27.683-27.081 0-14.957 12.394-27.082 27.683-27.082 15.29 0 27.684 12.125 27.684 27.082S60.904 66.567 45.614 66.567" fill="#FCDD83"></path><path d="M45.314 59.947c-11.135 0-20.161-9.026-20.161-20.16 0-11.135 9.026-20.161 20.16-20.161 11.135 0 20.161 9.026 20.161 20.16 0 11.135-9.026 20.161-20.16 20.161" fill="#FDEBB4"></path><path d="M46.216 52.726c-6.98 0-12.638-5.659-12.638-12.638 0-6.98 5.658-12.639 12.638-12.639 6.98 0 12.638 5.659 12.638 12.639 0 6.98-5.658 12.638-12.638 12.638" fill="#FEF8E6"></path><path d="M24.62 39.486l40.253.09-.07 31.334c-.01 4.925-3.974 8.908-8.852 8.897l-22.586-.05c-4.879-.011-8.825-4.012-8.814-8.937l.07-31.334z" fill="#0D0D0D"></path><path d="M68.151 57.833a3.642 3.642 0 107.285.015 3.642 3.642 0 00-7.285-.015zm3.624 8.133a8.124 8.124 0 11.036-16.25 8.124 8.124 0 01-.036 16.25zm1.06 18.054H18.394c-1.248 0-2.268-1.083-2.268-2.407s1.02-2.407 2.268-2.407h54.441c1.248 0 2.268 1.083 2.268 2.407s-1.02 2.407-2.268 2.407" fill="#0D0D0D"></path></g><path d="M0 0h96v96H0z"></path></g></svg></div><div class="_content"><h2 class="_headline">Daily briefing</h2><div data-test-id="slimproductpromo-child" class="_description"><p>Take five minutes to catch up on today’s essential news.</p></div></div><div class="_cta"><a class="ds-link-with-arrow-icon ds-link-with-arrow-icon--heavy" href="/espresso" data-analytics="daily_briefing_promo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="icon-link-arrow" fill="none" fill-rule="evenodd"><path class="path-background" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1zm.142 4.5l-1.008 1.062c3.33 3.276 4.194 4.14 4.608 4.5-1.602-.018-3.168-.018-10.242-.018v1.584c7.074 0 8.73 0 10.242-.018-.432.36-1.314 1.206-4.608 4.536l1.008 1.044 6.354-6.354L12.142 5.5z" fill="#2E45B8" fill-rule="nonzero"></path></g></svg><span>Start reading</span></a></div></div></div>
+;cut;
+<li class="current-edition__flashes-item"><a class="ds-link-with-arrow ds-link-with-arrow--minor" href="/leaders/2021/04/24/indias-giant-second-wave-is-a-disaster-for-it-and-the-world" data-analytics="weekly_edition:flash_1"><span>India’s covid-19 catastrophe</span></a></li>
+;cut;
