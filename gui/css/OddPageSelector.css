@@ -1,0 +1,42 @@
+.odd-page-selector{
+    display: flex;
+}
+
+.odd-page-numbers{
+    display: flex;
+    margin: 0 5px;
+}
+
+.odd-page-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1px;
+    padding: 0 0.05em;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    width: 1.5em;
+    height: 1.5em;
+
+    user-select: none;
+}
+
+.odd-page-number:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.selected-page, .selected-page:hover{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.odd-page-arrow{
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+    transition-duration: 0.25s;
+}
+
+.odd-page-arrow:disabled{
+    opacity: 0;
+}

@@ -1,0 +1,62 @@
+@-webkit-keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes appear-from-right{
+    0%{
+        margin-right: -20px;
+        opacity: 0;
+    }
+    100%{
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+.keyword-tag{
+    background-color: black;
+    padding: 2px 7px;
+    padding-right: 0;
+
+    border-radius: 5px;
+    width: auto;
+    margin: 2px;
+
+    -webkit-animation: appear 0.5s ease-out;
+    user-select: none;
+}
+
+.keyword-tag:hover{
+    opacity: 0.8;
+    transition-duration: 0.2s;
+}
+
+.keyword-tag span{
+    font-family: "Poppins";
+    color: white;
+
+    text-transform: capitalize;
+    font-size: 0.85em;
+}
+
+.keyword-tag button{
+    font-family: "Poppins";
+    color: white;
+
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+}
+
+.keyword-tag button:focus{
+    outline: none;
+}
+
+.new-keyword{
+    -webkit-animation: appear-from-right 0.5s ease-out;
+}

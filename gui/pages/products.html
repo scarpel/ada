@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ada</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/NewPrice.css">
+    <link rel="stylesheet" type="text/css" href="../css/Counter.css">
+    <script type="module" src="../linkers/products.js"></script>
+    <script type="module" src="../linkers/titleBar.js"></script>
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="window-btns">
+        <button id="close-window-btn" onclick="closeWin()">X</button>
+        <button id="minimize-btn" onclick="minimize()">_</button>
+        <button id="maximize-btn" onclick="maximize()">&square;</button>
+      </div>
+    </div>
+    <div id="load"></div>
+    <div id="loading">
+      <span id="loading-text"></span>
+      <img src="../images/spinner.png" id="spinner">
+    </div>
+    <div id="seiLa">
+      <div id="card">
+          <div id="card-elements">
+            <div class="gradient">
+              <img id="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61YMM3FiD5L._AC_SX679_.jpg"/>
+            </div>
+            <div id="card-bottom">
+              <div id="card-website">
+                <img id="favicon" src="https://www.amazon.com.br/favicon.ico"/>
+                <span id="website-name">Amazon</span>
+              </div> 
+              <h1 id="card-title">The Last of Us Part II</h1>
+              <div id="card-price">R$50.00</div>
+              <div id="card-counter"></div>
+              <div class="card-buttons">
+                <button class="cancel-btn choice-btn" onclick="hide('card')">X</button>
+                <button class="add-btn choice-btn" onclick="store()">+</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="below">
+      <h1 id="text">Welcome!</h1>
+      <img id="test" src="">
+      <button class="btn btn-news" >News</button>
+      <button class="btn btn-agenda" onclick="t()">Quick Agenda</button>
+      <button class="btn btn-shop" onclick="brow()">Shop</button>
+      <input id="product-url" type="text">
+      <div id="display">
+      </div>
+      <iframe src="" id="frame"></iframe>
+    </div>
+  </body>
+</html>

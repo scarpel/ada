@@ -1,0 +1,770 @@
+::selection { background: rgba(231, 39, 101, .99); }
+
+@-webkit-keyframes slide-from-right{
+    0%{
+        margin-right: -50px;
+        opacity: 0;
+    }
+    100%{
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-to-left{
+    0%{
+        margin-left: 0;
+        opacity: 1;
+    }
+    100%{
+        margin-left: -50px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes staple-calendar{
+    0%{
+        opacity: 0;
+        margin-top: -100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: -25px;
+    }
+}
+
+@-webkit-keyframes slide-from-bottom{
+    0%{
+        margin-top: 100px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes make-hole{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes shake-it{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes hide-schedule{
+    0%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: -100px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes to-right{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: 102px;
+        width: 68px;
+    }
+}
+
+@-webkit-keyframes to-left{
+    0%{
+        margin-left: 102px;
+        width: 68px;
+    }
+    100%{
+        margin-left: 0px;
+        width: 93px;
+    }
+}
+
+#agenda{
+    /* position: relative;
+    background-color: yellow;
+    height: 100vh; */
+}
+
+#main .header-title{
+    margin-bottom: 4px;
+}
+
+main{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+button{
+    font-family: "Poppins";
+    user-select: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+.agenda-top{
+    position: relative;
+    height: 160px;
+
+    margin: 0 20px;
+}
+
+.top-btns{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-top: 5px;
+}
+
+#calendar-content{
+    display: grid;
+    grid-template-columns: minmax(250px, 40%) auto;
+
+    width: 95%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+#agenda-bottom{
+    min-width: 435px;
+}
+
+#quick-agenda{
+    position: relative;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    min-width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+
+    border: 2px solid rgb(20, 20, 20);
+    box-shadow: 4px 4px 0 rgb(20, 20, 20);
+    
+    padding: 8px;
+}
+
+#quick-agenda-input{
+    font-family: "Poppins";
+    
+    font-size: 1.2em;
+    border: none;
+    background-color: transparent;
+    padding-left: 5px;
+}
+
+.quick-agenda-btn{
+    padding: 0;
+    font-size: 1.1em;
+    border: none;
+    background-color: transparent;
+}
+
+#quick-agenda-message{
+    width: 80%;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 5px;
+
+    font-family: "Poppins";
+    text-align: center;
+}
+
+#schedule-event{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 5px 0 rgb(235, 235, 235), 0 7px 15px rgba(24, 22, 23, 0.8);
+    /* box-shadow: 0 5px 10px rgba(24, 22, 23, 0.2); */
+    
+    width: 470px;
+    z-index: 100;
+
+    -webkit-animation: slide-from-bottom 0.5s ease-out;
+
+    display: none;
+}
+
+/* .black-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 500px;
+    background-color: black;
+} */
+
+.event-set{
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.event-top{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.fast-fill{
+    position: relative;
+    background-color: transparent;
+    width: 80%;
+    height: 25px;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+    border-top: 2px solid rgba(0,0,0,0.15);
+    border-left: 2px solid rgba(0,0,0,0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrong{
+    -webkit-animation: shake-it 0.3s linear;
+    -webkit-animation-iteration-count: 2;
+}
+
+#fast-fill-input{
+    font-family: "Poppins";
+    font-size: 1.1em;
+
+    width: 90%;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+#fast-fill-input:focus{
+    outline: none;
+}
+
+.fast-fill-btn{
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.1em;
+}
+
+#fast-fill-message{
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "Poppins";
+    margin-top: 10px;
+}
+
+.event-info{
+    margin-top: 20px;
+}
+
+.event-info-double{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -10px;
+}
+
+.event-info-divisor{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-family: "Poppins";
+}
+
+.event-info-divisor div{
+    width: 25px;
+    height: 7px;
+    border-radius: 15px;
+    
+    background-color: rgba(0,0,0,0.5);
+}
+
+.event-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="datetime-local"]{
+    width: 167px;
+}
+
+input[type="datetime-local"]::-webkit-clear-button{
+    display: none;
+}
+
+::-webkit-datetime-edit{
+    font-family: "Poppins";
+    font-size: 1em;
+}
+
+::-webkit-datetime-edit-fields-wrapper{
+    width: 500px;
+}
+
+::-webkit-inner-spin-button{
+    opacity: 1;
+}
+
+::-webkit-calendar-picker-indicator{
+    opacity: 1;
+}
+
+.event-info-left{
+    width: 50%;
+}
+
+.event-info-right{
+    width: 45%;
+}
+
+.event-info-field{
+    position: relative;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+    border-top: 2px solid rgba(0,0,0,0.15);
+    border-left: 2px solid rgba(0,0,0,0.15);
+    background-color: inherit;
+    border-radius: 15px;
+
+    padding: 5px 10px;
+    padding-top: 10px;
+
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.event-info-field input[type="date"]{
+    width: 125px;
+}
+
+.event-info-field:last-child{
+    margin-bottom: 0;
+}
+
+.event-info-field input{
+    border: none;
+}
+
+.event-info-title{
+    position: absolute;
+    top: -15px;
+    left: 15px;
+
+    font-family: "Poppins";
+    font-weight: 900;
+    background-color: white;
+    color: rgba(0,0,0,0.7);
+    padding: 0 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#priority-field{
+    margin: 0 auto;
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+#priority-field .counter{
+    margin: auto;
+}
+
+#priority-field .counter input{
+    font-size: 1em;
+    font-family: "Poppins";
+    text-align: center;
+    width: 40px;
+}
+
+#priority-field .counter button{
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    font-size: 1.1em;
+    border: 2px solid rgba(0,0,0);
+    border-radius: 50%;
+
+    background-color: transparent;
+    opacity: 0.6;
+    transition-duration: 0.5s;
+}
+
+#priority-field .counter button:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#priority-field .counter button:disabled{
+    opacity: 0.2;
+}
+
+#priority-status{
+    font-family: "Poppins";
+    font-size: 0.9em;
+    margin: 5px 0;
+
+    -webkit-animation: slide-from-right 0.25s ease-out;
+}
+
+/* .event-type{
+    height: 52px;
+    width: 45%;
+}
+
+.event-type .event-info-field{
+    height: 100%;
+} */
+
+.hide{
+    -webkit-animation: slide-to-left 0.25s ease-out;
+}
+
+.event-input-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-title{
+    position: relative;
+    z-index: 5;
+
+    font-family: "Poppins";
+    height: 25px;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: -5px;
+    font-size: 1em;
+}
+
+.event-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.event-btns button{
+    font-size: 0.95em;
+    padding: 5px 10px;
+
+    border: 2px solid rgba(0,0,0,0.3);
+    background-color: transparent;
+    border-radius: 15px;
+
+    transition-duration: 0.25s;
+}
+
+.event-btns button:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.event-btns button:first-child{
+    margin-right: 15px;
+}
+
+#staples{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 90%;
+    z-index: 10;
+}
+
+#staples .staple{
+    position: relative;
+    content: "";
+    height: 60px;
+    width: 20px;
+    background-color: rgb(20, 20, 20);
+
+    border-radius: 25px;
+    margin-top: -25px;
+    opacity: 0;
+
+    -webkit-animation: staple-calendar 0.5s ease-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#holes{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 460px;
+    height: 85%;
+    z-index: 5;
+}
+
+#holes .hole{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(231, 39, 101);
+    box-shadow: inset 0 5px 5px rgba(24, 22, 23, 0.1);
+
+    border-radius: 50%;
+    opacity: 0;
+
+    -webkit-animation: make-hole 0.1s ease-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.close-schedule{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    font-size: 1.2em;
+    padding: 0;
+    border: 2px solid rgba(0,0,0);
+    border-radius: 15px;
+    background-color: transparent;
+
+    width: 30px;
+    height: 30px;
+
+    z-index: 500;
+    opacity: 0.5;
+    transition-duration: 0.25s;
+}
+
+.close-schedule:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#events{
+    padding-right: 25px;
+}
+
+#events .month-events{
+    padding-left: 10px;
+}
+
+#events .month-events{
+    width: 100%;
+    margin: 0 15px;
+    height: 60vh;
+    overflow: auto;
+}
+
+.todos-title{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+
+    user-select: none;
+}
+
+.todos-items{
+    margin: 0 10px;
+    max-height: 50vh;
+    padding-left: 5px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.todos-items .todo{
+    margin: 5px 0;
+    opacity: 0;
+    -webkit-animation: slide-translate 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#all-todos{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    width: 95%;
+    margin: auto;
+    padding-top: 15px;
+
+    display: none;
+}
+
+.todos{
+    border-radius: 15px;
+    border: 2px solid rgb(14, 14, 14);
+    box-shadow: 8px 8px 0 rgb(14, 14, 14);
+
+    margin: 0 15px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    height: fit-content;
+}
+
+.add-todo-btn{
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+}
+
+#page-selector{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 15px;
+
+    width: 170px;
+    height: 30px;
+}
+
+#page-selector button{
+    font-size: 1em;
+
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-weight: 400;
+
+    z-index: 5;
+}
+
+#selector-slider{
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    left: 0;
+
+    width: 95px;
+    border-radius: 25px;
+    background-color: rgb(5, 5, 5);
+    z-index: 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.4s;
+}
+
+.above-selector{
+    color: white;
+    font-weight: 300;
+}
+
+.todos-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-todo-btn{
+    font-size: 1.5em;
+    font-weight: 500;
+    border: none;
+    padding-left: -5px;
+    border-radius: 50%;
+
+    width: 25px;
+    height: 25px;
+
+    margin: 0;
+    padding: 0px;
+    line-height: 15px;
+    margin-left: 5px;
+
+    transition-duration: 0.5s;
+}
+
+.add-todo-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.no-todo{
+    margin: 0;
+    padding: 0 15px;
+}
+
+.no-todo::before, .no-todo::after{
+    display: block;
+
+    font-family: "Poppins";
+    font-size: 1em;
+    text-align: center;
+    
+    opacity: 0.8;
+
+    -webkit-animation: slide-translate 0.5s ease-out;
+}
+
+#left-todos.no-todo::after{
+    content: "Nothing left to do!";
+    font-size: 1.1em;
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+#today-todos.no-todo::after{
+    content: "Click in the + or use 'todo' in the Quick Agenda field to add a new to do";
+    margin-bottom: 15px;
+}
+
+#today-todos.no-todo::before{
+    content: "Nothing to do!";
+    margin-top: 15px;
+    font-size: 1.2em;
+}

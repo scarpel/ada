@@ -1,0 +1,59 @@
+.calendar-day{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+    transition-duration: 0.25s;
+
+    z-index: 10;
+}
+
+.calendar-day:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.day{
+    font-family: "Poppins";
+    font-size: 1em;
+}
+
+.empty-day:hover{
+    background-color: transparent;
+}
+
+.selected{
+    /* font-weight: 900; */
+    /* background-color: black;
+    color: white; */
+}
+
+.calendar-day:hover .busy::after{
+    background-color: yellow;
+}
+
+.busy:hover::after{
+    background-color: transparent;
+}
+
+.busy::after{
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%);
+
+    content: "";
+    background-color: black;
+    border-radius: 50px;
+
+    width: 5px;
+    height: 5px;
+
+    transition-duration: 0.25s;
+}

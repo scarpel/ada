@@ -1,0 +1,26 @@
+.counter{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 100%;
+    color: inherit;
+}
+
+.counter input{
+    margin: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.counter button{
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.2em;
+    border-radius: 25px;
+
+    transition-duration: 0.25s;
+}
+
+.counter button:focus{
+    outline: none;
+}

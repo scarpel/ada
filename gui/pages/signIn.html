@@ -1,0 +1,18 @@
+<div id="signInMain">
+    <link rel="stylesheet" type="text/css" href="../css/signIn.css">
+    <link rel="stylesheet" type="text/css" href="../css/CustomRoundCheckbox.css">
+
+    <main id="card">
+        <h1>sign in.</h1>
+        <div class="signIn-info">
+            <input type="text" placeholder="e-mail" id="email" value="admin@ada.com">
+            <input type="password" placeholder="password" id="password" value="123456">
+            <div id="stay-connected"><span>stay connected?</span></div>
+        </div>
+        <button class="go-btn" onclick="verifyLogin()">let's go!</button>
+
+        <div class="sign-up-span">Don't have an account? <button id="sign-up-btn" onclick="signUp()">Sign up</button></div>
+    </main>
+
+    <script type="module" src="../linkers/signIn.js"></script>
+</div>

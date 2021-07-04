@@ -1,0 +1,41 @@
+<div>
+    <link rel="stylesheet" type="text/css" href="../css/shop.css">
+    <link rel="stylesheet" type="text/css" href="../css/ProductCard.css">
+    <link rel="stylesheet" type="text/css" href="../css/NewPrice.css">
+    <script type="module" src="../linkers/shop.js"></script>
+    <div id="popups">
+        <div id="product-display">
+            <div id="product-display-left">
+                <img src="" alt="Product image" id="product-display-img">
+            </div>
+            <div id="product-display-right">
+                <button id="product-display-close-btn" onclick="hideElement('product-display')">x</button>
+                <div id="product-display-website-info">
+                    <img id="product-display-favicon" src="" alt="Website's favicon">
+                    <span id="product-display-website-name"></span>
+                </div>
+                <h1 id="product-display-name"></h1>
+                <div id="product-display-price"></div>
+                <div id="product-display-update-in">
+                    <span>Update price after how many days?</span>
+                </div>
+                <div class="product-display-btns">
+                    <button id="product-display-store-btn" onclick="handleStore()">Add to Products</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main-content">
+        <div id="header">
+            <h1>shop.</h1>
+            <div class="tool-bar">
+                <div id="load">
+                    <img src="https://www.kindpng.com/picc/m/392-3926418_loading-spinner-loading-icon-png-transparent-png-download.png">
+                </div>
+                <input type="text" name="url" id="product-url">
+                <button id="search-btn" onclick="fetchProduct()">Go!</button>
+            </div>
+        </div>
+        <div id="products"></div>
+    </main>
+</div>

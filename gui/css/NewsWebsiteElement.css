@@ -1,0 +1,68 @@
+.news-website-info{
+    position: relative;
+    padding: 10px 15px;
+    padding-right: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    font-family: "Poppins";
+}
+
+.news-website-delete{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0.7;
+    width: 1.2em;
+    height: 1.2em;
+
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.news-website-delete:hover{
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+.news-website-top{
+    display: flex;
+    align-items: center;
+}
+
+.news-website-favicon{
+    width: 16px;
+    height: 16px;
+}
+
+.news-website-name{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    margin: 0;
+    margin-left: 8px;
+
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.news-website-categories{
+    display: flex;
+    margin-top: -5px;
+}
+
+.news-website-categories:empty::after{
+    content: "No categories";
+
+    font-family: "Poppins";
+    font-size: 1em;
+    opacity: 0.7;
+}

@@ -1,0 +1,319 @@
+@-webkit-keyframes mark{
+    0%{
+        width: 0%;
+    }
+    100%{
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes slide-left{
+    0%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+    100%{
+        margin-left: -150px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slide-left-reverse{
+    0%{
+        margin-left: -150px;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes slide-right{
+    0%{
+        margin-left: 150px;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-right-reverse{
+    0%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+    100%{
+        margin-left: 150px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slide-bottom{
+    0%{
+        margin-bottom: -30px;
+        opacity: 0;
+    }
+    100%{
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    font-family: "Poppins";
+    font-weight: 600;
+    letter-spacing: -5px;
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+    z-index: 5;
+}
+
+.forms{
+    width: 50vw;
+    height: 270px;
+    position: relative;
+    margin-top: -25px;
+
+    z-index: 10;
+}
+
+#user-credentials, #user-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    /* background-color: yellowgreen; */
+    text-align: center;
+    
+}
+
+#user-credentials{
+    -webkit-animation-fill-mode: forwards;
+}
+
+#user-info{
+    display: none;
+    
+    opacity: 0;
+    margin-top: 25px;
+
+    -webkit-animation: slide-right 0.5s ease-out;
+    -webkit-animation-delay: 0.25s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="text"], input[type="password"]{
+    display: block;
+
+    font-family: "Poppins";
+    font-size: 1.4em;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px 0;
+    width: 95%;
+
+    border: none;
+    background-color: transparent;
+}
+
+button{
+    font-size: 1em;
+    padding: 8px 16px;
+    margin-top: 25px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: black;
+    color: white;
+
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    transition-duration: 0.5s;
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+button:focus{
+    opacity: 0.8;
+}
+
+h2{
+    font-family: "Poppins";
+    font-weight: 700;
+    margin: 5px 0;
+
+    user-select: none;
+}
+
+label{
+    position: relative;
+
+    font-family: "Poppins";
+    font-size: 1.1em;
+    text-align: center;
+
+    margin-right: 5px;
+    user-select: none;
+}
+
+
+label input{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+}
+
+label span{
+    position: relative;
+    padding: 5px;
+}
+
+label input:checked ~ span{
+    color: white;
+    transition-delay: 0.3s;
+    transition-duration: 0.2s;
+}
+
+label input:checked ~ span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    border-radius: 3px;
+
+    -webkit-animation: mark 0.4s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+#user-info  div{
+    margin-bottom: 20px;
+}
+
+#user-info  div:last-of-type{
+    margin-bottom: 0px;
+}
+
+
+input[type="date"]{
+    font-family: "Poppins";
+    font-size: 1.1em;
+    width: 140px;
+
+    background-color: transparent;
+    border: none;
+    background: url(../images/icons/calendario.png) 97% 50% no-repeat;
+    image-rendering: pixelated;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+#error-popup{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 50%;
+    max-width: 600px;
+    max-height: 80px;
+    height: auto;
+    padding-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(223, 223, 223);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    display: none;
+    -webkit-animation: slide-bottom 0.5s ease-out;
+}
+
+#error-popup button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.25em;
+
+    padding: 0;
+    margin: 0;
+    line-height: 0px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#error-popup button:hover{
+    background-color: rgba(104, 104, 104, 0.2);
+}
+
+#error-msg{
+    display: block;
+    font-family: "Poppins";
+    font-size: 1em;
+    padding: 0px 25px;
+    text-align: center;
+
+    margin: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-height: 70px;
+}

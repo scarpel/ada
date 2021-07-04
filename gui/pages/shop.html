@@ -1,0 +1,68 @@
+<div id="shop">
+    <link rel="stylesheet" type="text/css" href="../css/shop.css">
+    <link rel="stylesheet" type="text/css" href="../css/NewPrice.css">
+    <link rel="stylesheet" type="text/css" href="../css/ProductCard.css">
+    <link rel="stylesheet" type="text/css" href="../css/WebsiteProducts.css">
+    <link rel="stylesheet" type="text/css" href="../css/OddPageSelector.css">
+
+    <div id="popups">
+        <div id="product-display">
+            <div class="tag-string"></div>
+            <svg class="top-tag">
+                <polygon points="0,60 62,0 248,0 310,60" class="top-tag-obj"/>
+                <circle r="15" cx="155" cy="30" class="tag-hole"/>
+            </svg> 
+            <div class="product-display-info">
+                <button id="product-display-close-btn" onclick="hideElement('product-display')">&times;</button>
+                <img src="" alt="Product image" id="product-display-img">
+                <div class="product-display-website-info">
+                    <img id="product-display-favicon" src="" alt="Website's favicon">
+                    <span id="product-display-website-name"></span>
+                </div>
+                <h1 id="product-display-name"></h1>
+                <div id="product-display-price"></div>
+                <div id="product-display-update-in">
+                    <span class="update-text">Update price after how many days?</span>
+                </div>
+                <div class="product-display-btns">
+                    <button id="product-display-store-btn" onclick="handleStore()">Add to Products</button>
+                </div>
+            </div>
+        </div>
+        <div id="status-display">
+            <div id="status-icon"></div>
+            <h2 id="status-title"></h2>
+            <p id="status-text"></p>
+            <button id="status-btn"></button>
+        </div>
+    </div>
+    <div id="body">
+        <div class="shop-header">
+            <div class="shop-top">
+                <button class="go-back-btn" onclick="goBack()">< go back</button>
+                <div class="header-btns">
+                    <input type="text" name="url" id="search-input" placeholder="Product's URL" class="hide-search-input">
+                    <button onclick="handleSearchClick()" id="add-product-btn">Add Product</button>
+                    <button class="loading" id="updating-btn">Updating Prices</button>
+                </div>
+            </div>
+            <h1 class="header-title">shop.</h1>
+        </div>
+        <main class="page-bottom">
+            <div class="combo-box">
+                <span>Sort by:</span>
+                <select name="sort-by" id="sort-by">
+                    <option value="1" selected>Newer</option>
+                    <option value="2">Older</option>
+                    <option value="3">Lower Prices</option>
+                    <option value="4">Bigger Prices</option>
+                    <option value="5">Website Name</option>
+                </select>
+            </div>
+            <div id="products" class="products-set">
+
+            </div>
+        </main>
+    </div>
+    <script type="module" src="../linkers/shop.js"></script>
+</div>

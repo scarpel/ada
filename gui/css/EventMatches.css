@@ -1,0 +1,124 @@
+@-webkit-keyframes show-up{
+    0%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.event-matches{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+
+    padding: 20px;
+    border-radius: 15px;
+
+    min-width: 350px;
+
+    font-family: "Poppins";
+    display: none;
+
+    -webkit-animation: show-up 0.5s ease-out;
+}
+
+.event-matches-text{
+    font-size: 1em;
+    text-align: center;
+
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.event-match-cards{
+    margin-bottom: 10px;
+}
+
+.event-match-cards:last-child{
+    margin-bottom: 0px;
+}
+
+.event-match-days{
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.event-match-day{
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.event-match-full-card{
+    display: grid;
+    grid-template-columns: 45px auto;
+
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 10px;
+}
+
+.event-match-full-card .round-checkbox input:checked ~ .checkmark{
+    background-color: rgb(231, 39, 101);
+}
+
+.event-match-full-card .round-checkbox:hover input:checked ~ .checkmark{
+    background-color: rgb(221, 38, 78);
+}
+
+.event-match-card{
+    position: relative;
+    padding: 10px 10px;
+    padding-left: 20px;
+
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.event-match-card .event-time{
+    font-family: "Poppins";
+    font-size: 1em;
+    margin-top: -3px;
+} 
+
+.event-matches-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 15px;
+}
+
+.event-matches-btns button{
+    text-transform: uppercase;
+    padding: 5px 10px;
+
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+
+    transition-duration: 0.25s;
+}
+
+.event-matches-btns button:hover{
+    background-color: black;
+    color: white;
+}
+
+.event-matches-btns button:disabled:hover{
+    background-color: initial;
+    color: initial;
+}
+
+.event-matches-btns button:disabled{
+    border-color: rgba(0, 0, 0, 0.5);
+}
