@@ -1,0 +1,293 @@
+@keyframes rotation{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    text-align: center;
+    /* background-color: rgb(247, 247, 247); */
+    background-color: yellow;
+}
+
+#below{
+    overflow: auto;
+    height: calc(100vh - 30px);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.btn{
+    text-align: center;
+    margin-right: 0.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+.btn :last-child{
+    margin-right: 0;
+}
+
+.btn-news{
+    background-color: rgb(34, 203, 255);
+}
+
+.btn-agenda{
+    background-color: rgb(255, 243, 81);
+}
+
+.btn-shop{
+    background-color: crimson;
+}
+
+.active{
+    transition-duration: 5s;
+    filter: blur(5px)
+}
+
+#loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    display: none;
+    z-index: 2;
+}
+
+#loading-text{
+    position: absolute;
+    z-index: 1;
+    bottom: -25px;
+    width: 200px;
+}
+
+#spinner{
+    width: 50px;
+    height: 50px;
+    animation: rotation 1.25s linear infinite;
+}
+
+#card{
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.35);
+    width: 250px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+    position: fixed;
+}
+
+#close-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+    width: 25px;
+    height: 25px;
+    outline: none;
+}
+
+#close-btn:hover{
+    background-color: rgba(0,0,0,0.15);
+    transition-duration: 1s;
+}
+
+#card-elements{
+    text-align: center;
+    padding: 1em 0;
+}
+
+#card-website{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#favicon{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.gradient{
+    display: inline-block;
+    background-image: linear-gradient(0, white, rgba(0,0,0,0));
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 85%;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+#card-img{
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: -1;
+    margin-top: -25px;
+}
+
+#card-title{
+    margin: 0.25em;
+    font-size: 1.2em;
+}
+
+.card-buttons{
+    width: 32%;
+    height: 10%;
+    max-width: 200px;
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.card-buttons button{
+    margin-left: 5px;
+}
+
+.card-buttons button:first-child{
+    margin-left: 0;
+}
+
+.choice-btn{
+    width: 7vh;
+    height: 7vh;
+    border: none;
+    font-size: 1em;
+    border-radius: 25px;
+}
+
+.add-btn{
+    font-size: 1.5em;
+    background-color: rgb(33, 223, 74);
+    color: white;
+}
+
+.cancel-btn{
+    background-color: rgb(223, 33, 33);
+    color: white;
+}
+
+#display{
+    /* background-color: turquoise; */
+    padding: 15px 0;
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.product-card{
+    padding: 0.8em;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    background-color: white;
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 15px;
+    /* margin-left: 15px; */
+    margin-top: 15px;
+    position: relative;
+}
+
+.product-card:first-child:last-child{
+    margin-left: 0;
+}
+
+.product-card-img{
+    max-height: 150px;
+    max-width: 85%;
+}
+
+.product-card-name{
+    margin: 5px;
+    font-size: 1em;
+    width: 95%;
+}
+
+.product-card-price{
+    margin: auto 0;
+}
+
+.price-info{
+    /* display: flex;
+    align-content: space-between; */
+    /* justify-content: center; */
+    display: block;
+    min-height: 20px;
+}
+
+.price-info .product-card-price{
+    margin-right: 5px;
+} 
+
+.product-delete-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
+}
+
+.product-delete-btn:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.product-favicon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    left: 10px;
+    border: white 3px solid;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.35);
+}
+
+.older-price{
+    text-decoration: line-through;
+}
+
+#card-counter{
+    margin: auto;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#card-bottom{
+    background-color: gray;
+    height: 100%;
+    border-radius: 25px;
+    margin-top: 25px;
+    padding: 10px 0;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}

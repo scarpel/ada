@@ -1,0 +1,61 @@
+.calendar{
+    min-width: 220px;
+}
+
+.calendar-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+}
+
+.calendar-top button{
+    font-size: 1.5em;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    color: rgba(231, 39, 101, .99); 
+}
+
+#year{
+    font-weight: 300;
+}
+
+.calendar-info{
+    user-select: none;
+
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.days-of-week{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    align-items: center;
+    justify-items: center;
+
+    font-family: "Poppins";
+    font-weight: 700;
+    text-transform: uppercase;
+
+    user-select: none;
+}
+
+.days-of-week div{
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected, .selected:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,326 @@
+@-webkit-keyframes ascend-message{
+    0%{
+        opacity: 0;
+        margin-top: 50px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@-webkit-keyframes decrease-message{
+    0%{
+        opacity: 0;
+        width: 100%;
+    }
+    100%{
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes slide-translate{
+    0%{
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes show-mask{
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+@-webkit-keyframes hide-mask{
+    0%{
+        width: 100vw;
+    }
+    100%{
+        width: 0vw;
+    }
+}
+
+
+@-webkit-keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    position: relative;
+    margin: 0;
+}
+
+button, img{
+    user-select: none;
+}
+
+h2{
+    font-weight: 600;
+}
+
+#title-bar, #title-bar-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30px;
+}
+
+#title-bar{
+    background-color: transparent;
+
+    z-index: 1000;
+}
+
+#title-bar-background, #content{
+    z-index: 10;
+}
+
+#content{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    border: none;
+    padding: 0;
+
+    overflow: auto;
+    height: calc(100vh - 30px);
+}
+
+#loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 1;
+    font-size: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#mask{
+    position: fixed;
+    top: 0;
+
+    width: 0vw;
+    height: 100vh;
+    
+    z-index: 500;
+
+    -webkit-animation: show-mask 0.4s ease-out;
+    -webkit-animation-fill-mode: forwards;
+
+    display: none;
+}
+
+.left-oriented{
+    right: auto;
+    left: 0;
+}
+
+.right-oriented{
+    right: 0;
+    left: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    transition-duration: 0.25s;
+    background-color: inherit;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(39, 39, 39, 0.15);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: rgb(161, 161, 161);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#flash-messages{
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right:0;
+
+    background-color: transparent;
+
+    z-index: 10000;
+    width: 100vw;
+    height: calc(100vh - 30px);
+
+    display: none;
+}
+
+#flash-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 10px;
+
+    text-align: center;
+
+    font-family: "Poppins";
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+    -webkit-animation: ascend-message 0.5s ease-out;
+}
+
+.message-icon{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: -25px;
+}
+
+#message-title{
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 25px;
+    margin: 0;
+}
+
+#message-text{
+    margin: 5px 2px;
+    font-size: 1em;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.message-btns button{
+    background-color: black;
+    color: white;
+    border: none;
+
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    text-transform: lowercase;
+    transition-duration: 0.5s;
+}
+
+.message-btns button:hover{
+    background-color: rgb(209, 209, 209);
+    color: black;
+    transition-duration: 0.5s;
+}
+
+button{
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+button:focus{
+    outline: none;
+}
+
+.header-btns button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+
+    text-transform: uppercase;
+    font-size: 0.95em;
+    font-weight: 400;
+}
+
+.header-btns button:hover::before{
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translate(-50%, 0);
+
+    content: "";
+    width: 50%;
+    height: 2px;
+    border-radius: 20px;
+
+    background-color: black;
+    -webkit-animation: decrease-message 0.4s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.go-back-btn{
+    border: none;
+    background-color: transparent;
+
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.header-title{
+    -webkit-user-select: none;
+    font-family: "Poppins";
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+
+    font-size: 6em;
+    font-weight: 00;
+    margin: 0;
+    letter-spacing: -5px;
+}
+
+.page-bottom{
+    padding: 15px;
+    background-color: white;
+
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.loading::after{
+    position: absolute;
+    top: 0;
+
+    content: "";
+    width: 0.7em;
+    height: 0.7em;
+    border: 2px solid rgba(10, 10, 10, 0.9);
+    border-right-color: transparent;
+    border-radius: 50%;
+    
+    margin-left: 5px;
+    margin-top: 4px;
+    background-color: transparent;
+
+    -webkit-animation: loading 1s linear infinite;
+}

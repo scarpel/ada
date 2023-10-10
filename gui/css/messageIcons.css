@@ -1,0 +1,184 @@
+@-webkit-keyframes fall-down{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fall-down-margin{
+    0%{
+        margin-bottom: 50px;
+        opacity: 0;
+    }
+    100%{
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fall-down-margin-top{
+    0%{
+        margin-top: -50px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.icon-background{
+    position: absolute;
+    top: -5px;
+    bottom: 0px;
+    left: 8px;
+    right: 0;
+
+    width: 65px;
+    height: 65px;   
+
+    background: transparent;
+
+    border-radius: 50%;
+
+    -webkit-animation: fall-down 0.4s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.4s;
+
+    opacity: 0;
+}
+
+.icon-border{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: 4px solid black;
+
+    -webkit-animation: fall-down 0.4s ease-out;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+
+    opacity: 0;
+}
+
+#success-icon, #error-icon, #question-icon{
+    display: none;
+}
+
+#success-icon .icon-background{
+    background: rgb(10,215,111);
+    background: linear-gradient(32deg, rgb(10,215,111) 0%, rgb(55, 252, 130) 100%);
+}
+
+.success-left{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+
+    width: 20px;
+    height: 5px;
+    border-radius: 8px;
+    transform: rotate(45deg);
+
+    background-color: black;
+
+    -webkit-animation: fall-down-margin 0.4s ease-out;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+
+    opacity: 0;
+}
+
+.success-right{
+    position: absolute;
+    bottom: 22px;
+    right: 1px;
+
+    width: 40px;
+    height: 5px;
+    border-radius: 8px;
+    transform: rotate(-45deg);
+
+    background-color: black;
+
+    -webkit-animation: fall-down-margin 0.4s ease-out;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    opacity: 0;
+}
+
+#error-icon .icon-background{
+    background: rgb(211, 32, 32);
+    background: linear-gradient(32deg, rgb(211, 32, 32) 0%, rgb(243, 49, 58) 100%);
+}
+
+.error-left{
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    transform: rotate(45deg);
+
+    width: 4px;
+    height: 40px;
+    background-color: black;
+    border-radius: 10px;
+
+    -webkit-animation: fall-down-margin-top 0.4s ease-out;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    opacity: 0;
+}
+
+.error-right{
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    transform: rotate(-45deg);
+
+    width: 4px;
+    height: 40px;
+    background-color: black;
+    border-radius: 10px;
+
+    -webkit-animation: fall-down-margin-top 0.4s ease-out;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+
+    opacity: 0;
+}
+
+#question-icon .icon-background{
+    background: #e4e710;
+    background: linear-gradient(32deg, #fae526 0%, #f1db0f 100%);
+}
+
+.question-mark{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Poppins";
+    font-size: 3.5em;
+    font-weight: 300;
+
+    -webkit-animation: fall-down-margin-top 0.4s ease-out;
+    -webkit-animation-delay: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+
+    opacity: 0;
+}

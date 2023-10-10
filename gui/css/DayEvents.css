@@ -1,0 +1,45 @@
+.day-events{
+    font-family: "Poppins";
+    margin-bottom: 15px;
+}
+
+.day-events:last-child{
+    margin-bottom: 0px;
+}
+
+.day-events-title{
+    font-size: 1.25em;
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.day-events-cards{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-bottom: 5px;
+}
+
+.day-events-cards .event-card{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.no-events{
+    font-size: 0.9em;
+}
+
+.no-events .day-events-title{
+    margin-bottom: -5px;
+}
+
+.no-events::after{
+    content: "No events";
+    font-size: 1.1em;
+    opacity: 0.6;
+
+    padding-top: -50px;
+}

@@ -1,0 +1,112 @@
+.articles-1x10{
+    /* display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    /* align-items: center; */
+    justify-items: center;
+
+    /* max-width: 700px; */
+    margin: auto;
+}
+
+.article-1x10{
+    position: relative;
+    width: 200px;
+    max-height: 250px;
+
+    font-family: "Poppins";
+    margin-bottom: 15px;
+}
+
+.article-1x10:hover .article-1x10-img{
+    transform: scale(1.05);
+}
+
+.article-1x10-byline{
+    background-color: white;
+    font-family: "Poppins";
+
+    font-size: 0.8em;
+    padding: 1px 2px;
+}
+
+.article-1x10-favicon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    width: 16px;
+    height: 16px;
+
+    z-index: 1000;
+}
+
+.article-1x10-favicon img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.article-1x10-info{
+    margin-top: 5px;
+}
+
+.article-1x10-img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+
+    border-radius: 5px;
+    
+    transition-duration: 0.5s;
+}
+
+.article-1x10-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 18px;
+
+    margin: 0;
+    margin-bottom: 2px;
+    transition-duration: 0.25s;
+}
+
+.article-1x10-title:hover{
+    color: rgb(38, 120, 226);
+}
+
+.article-1x10-header{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    text-transform: uppercase;
+    font-size: 0.85em;
+
+    opacity: 0.7;
+    color: black;
+}
+
+a.article-1x10-header:hover{
+    color: rgb(38, 120, 226);
+}
+
+/* .article-1x10-header:hover{
+    color: black;
+} */
+
+.article-1x10-title-a{
+    color: black;
+}
+
+.read{
+    opacity: 0.7;
+}

@@ -1,0 +1,816 @@
+::-webkit-scrollbar-thumb:active{
+    background-color: white;
+}
+
+/* ::-webkit-scrollbar{
+    background-color: rgb(38, 120, 226);
+} */
+
+::selection { background: rgba(38, 120, 226, .99); }
+
+@-webkit-keyframes slide-right{
+    0%{
+        
+    }
+    100%{
+        margin-left: 200px;
+        width: 150px;
+    }
+}
+
+@-webkit-keyframes slide-left{
+    0%{
+        margin-left: 200px;
+    }
+    100%{
+        margin-left: 0px;
+        width: 165px;
+    }
+}
+
+@-webkit-keyframes on-slider{
+    0%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
+}
+
+@-webkit-keyframes out-slider{
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@-webkit-keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes point-right{
+    0%{
+        margin-right: 0;
+    }
+    50%{
+        margin-right: -10px;
+    }
+    100%{
+        margin-right: 0;
+    }
+}
+
+@-webkit-keyframes point-left{
+    0%{
+        margin-left: 0;
+    }
+    50%{
+        margin-left: -10px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes show-status-message{
+    0%{
+        opacity: 0;
+        padding-left: 90px;
+    }
+    100%{
+        opacity: 1;
+        padding-left: 0px;
+    }
+}
+
+@-webkit-keyframes slide-up{
+    0%{
+        opacity: 0;
+        margin-top: 90px;
+    }
+    100%{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
+@-webkit-keyframes new-category{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+main{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+#news-top{
+    position: relative;
+    height: 180px;
+    margin: 0 11px;
+    margin-top: 10px;
+}
+
+#news-bottom{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+
+    z-index: 5;
+}
+
+#title{
+    -webkit-user-select: none;
+    font-family: "Poppins";
+    position: absolute;
+    left: 15px;
+    bottom: -15px;
+
+    font-size: 5.5em;
+    /* font-weight: 200; */
+    margin: 0;
+}
+
+.last-update{
+    position: absolute;
+    right: 15px;
+    bottom: 3px;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.1em;
+
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#last-update-hour{
+    font-weight: 700;
+    padding: 0 8px;
+}
+
+.last-update button{
+    background-color: salmon;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/updateFull.svg);
+    background-size: 20px;
+    margin-bottom: 5px;
+}
+
+.last-update button:hover{
+    -webkit-animation: loading 0.5s ease-out;
+}
+
+#articles{
+    max-width: 900px;
+    margin: auto;
+}
+
+#articles-bottom{
+    width: 100%;
+}
+
+#news{
+    background-color: rgb(38, 120, 226);
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#new-info{
+    position: fixed;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -51%);
+    z-index: 1000;
+
+    width: 70%;
+    min-width: 400px;
+    max-width: 600px;
+    height: 65vh;
+
+    display: none;
+    grid-template-rows: 10% 80% 10%;
+    box-shadow: 0 0 20px rgba(37, 39, 48, 0.5);
+}
+
+.switch-btns{
+    position: relative;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+
+    width: 350px;
+    margin: auto;
+}
+
+.gathered-websites{
+    position: relative;
+
+    overflow: auto;
+    height: 100%;
+    padding: 0 10px;
+}
+
+#unknown-websites:empty::before, #unknown-websites:empty::after, #known-websites:empty::before, #known-websites:empty::after{
+    font-size: 1.2em;
+    font-family: "Poppins";
+
+    text-align: center;
+}
+
+#unknown-websites:empty::before, #known-websites:empty::before{
+    display: block;
+    content: "No Website Found!";
+
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 15%;
+}
+
+#unknown-websites:empty::after, #known-websites:empty::after{
+    display: block;
+    content: "Try accessing new news websites and then scan the history!";
+
+    width: 60%;
+    margin: auto;
+    margin-top: 0px;
+    font-size: 1.1em;
+}
+
+#known-websites:empty::after{
+    content: "Try accessing new topics on your favorite news websites and then scan the history!";
+}
+
+.new-info-btns{
+    /* margin: 10px 5px; */
+    margin: auto;
+    text-align: center;
+}
+
+.new-info-btns button{
+    font-family: "Poppins";
+    font-size: 0.8em;
+
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 8px 15px;
+
+    transition-duration: 0.25s;
+}
+
+.new-info-btns button:hover{
+    opacity: 0.9;
+}
+
+.new-info-btns button:focus{
+    outline: none;
+}
+
+.new-info-btns button:disabled{
+    opacity: 0.5;
+}
+
+#known-websites{
+    display: none;
+
+    margin: 0;
+    user-select: none;
+}
+
+#known-websites .website-info{
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+#known-websites .website-info .website-info-top{
+    justify-content: center;
+}
+
+#known-websites .website-info .website-categories{
+    margin: 0;
+    text-align: center;
+}
+
+.slide{
+    -webkit-animation: slide 1s linear;
+}
+
+.switch-btns button{
+    background-color: transparent;
+    color: black;
+    border: none;
+
+    font-family: "Poppins";
+    font-size: 0.95em;
+    font-weight: 400;
+
+    padding: 5px 10px;
+    z-index: 5;
+
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.switch-btns button:focus{
+    outline: none;
+}
+
+#left-btn{
+    color: white;
+}
+
+#slider{
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 165px;
+    height: 100%;
+    border-radius: 25px;
+
+    z-index: 0;
+
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(38, 120, 226);
+}
+
+.teste{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.pages-selector{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.pages-selector button{
+    background-color: transparent;
+    border: none;
+
+    font-family: "Poppins";
+    text-transform: lowercase;
+    font-size: 1em;
+    font-weight: 400;
+
+    transition-duration: 0.25s;
+}
+
+.pages-selector button:disabled{
+    opacity: 0;
+}
+
+.pages-selector button:focus{
+    outline: none;
+}
+
+.next-btn:hover{
+    -webkit-animation: point-right 0.5s ease-out;
+}   
+
+.previous-btn:hover{
+    -webkit-animation: point-left 0.5s ease-out;
+}   
+
+#sections{
+    /* position: absolute;
+    bottom: 10px;
+    right: 15px; */
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+
+    width: 190px;
+    font-family: "Poppins";
+    background-color: white;
+    font-size: 1.1em;
+    z-index: 1;
+    border-radius: 15px 15px;
+    margin-left: 25px;
+
+    user-select: none;
+}
+
+.section{
+    position: relative;
+    padding: 5px 15px;
+    z-index: 5;
+
+    font-family: "Poppins";
+    border: none;
+    background-color: transparent;
+    font-size: 0.9em;
+    font-weight: 400;
+
+    transition-duration: 0.25s;
+
+}
+
+.section:focus{
+    outline: none;
+}
+
+.section-bar{
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    z-index: 2;
+    background-color: black;
+    width: 90px;
+    margin-left: 0;
+    height: 100%;
+    border-radius: 15px;
+
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+}
+
+.at-right{
+    margin-left: 94px;
+    width: 100px;
+}
+
+.above-bar{
+    color: white;
+}
+
+#keywords{
+    display: none;
+    
+    margin-top: 10px;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    
+    padding: 0 15px;
+    padding-right: 0px;
+}
+
+.header-btns{
+    margin-top: 3px;
+}
+
+.header-btns button:not(:last-child){
+    margin-right: 15px;
+}
+
+.back-btn{
+    font-family: "Poppins";
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.1em;
+}
+
+.back-btn:focus{
+    outline: none;
+}
+
+.top-btns button{
+    background-color: transparent;
+    /* border: 1px solid black; */
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+.top-btns button:hover{
+    text-decoration: underline;
+}
+
+.top-btns button:focus{
+    outline: none;
+}
+
+.news-bottom-top{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#articles-bottom .articles-1x10{
+    padding-top: 15px;
+}
+
+.status-message{
+    -webkit-animation: show-status-message 0.5s ease-out;
+
+    user-select: none;
+}
+
+#manage-websites{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-51%, -51%);
+
+    background-color: white;
+    border-radius: 15px;
+    z-index: 50;
+    box-shadow: 0 5px 10px rgba(37, 39, 48, 0.3);
+
+    font-family: "Poppins";
+    padding: 10px 15px;
+    text-align: center;
+
+    -webkit-animation: slide-up 0.5s ease-out;
+
+    display: none;
+}
+
+.manage-websites-text{
+    user-select: none;
+}
+
+.manage-websites-text h1{
+    margin: 0;
+    font-weight: 600;
+}
+
+.manage-websites-text p{
+    margin: 0 auto;
+    margin-top: -5px;
+    width: 300px;
+
+    line-height: 18px;
+}
+
+.manage-websites-text span{
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-left: 2px;
+}
+
+#all-websites{
+    padding: 10px;
+    padding-bottom: 15px;
+
+    max-height: 45vh;
+    overflow: auto;
+}
+
+#all-websites:empty::before{
+    content: "No News Websites";
+
+    display: block;
+    font-family: "Poppins";
+    font-size: 1.4em;
+    font-weight: 900;
+
+    opacity: 0.6;
+}
+
+#all-websites .news-website-info:not(:first-child){
+    margin-top: 15px;
+}
+
+.manage-websites-btns button{
+    background-color: black;
+    color: white;
+    border: none;
+
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.manage-websites-btns button:hover, #add-website button:hover{
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+.manage-websites-btns{
+    padding: 5px 0;
+}
+
+.article-spinner{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 5px;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: 4px solid black;
+
+    border-right-color: transparent;
+
+    -webkit-animation: loading 0.8s linear infinite;
+}
+
+.article-spinner ~ h1{
+    font-size: 1.3em;
+}
+
+#add-website{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    width: 400px;
+
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-family: "Poppins";
+
+    z-index: 50;
+    box-shadow: 0 5px 10px rgba(37, 39, 48, 0.3);
+
+    -webkit-animation: slide-up 0.5s ease-out;
+    display: none;
+}
+
+#add-website button{
+    background-color: black;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.website-display input{
+    margin: 2px 0;
+}
+
+.website-display{
+    margin-bottom: 15px;
+}
+
+.categories-container{
+    margin-bottom: 15px;
+}
+
+#add-website p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.categories-top{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-bottom: 0;
+}
+
+.categories-top button{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-left: 5px;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+#add-website h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.55em;
+
+    user-select: none;
+}
+
+#categories-display{
+    margin-bottom: 10px;
+    max-height: 25vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#categories-display:empty::after, #categories-display:empty::before{
+    display: block;
+    margin: 0;
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+#categories-display:empty::after{
+    content: "No categories added!";
+    margin-top: 5px;
+}
+
+#add-website input{
+    font-family: "Poppins";
+    font-size: 1.05em;
+    padding-left: 2px;
+
+    border: none;
+    border-bottom: 2px solid rgba(37, 39, 48, 0.1);
+    width: 85%;
+}
+
+#add-website input:focus{
+    outline: none;
+}
+
+.add-website-btns{
+    text-align: center;
+    user-select: none;
+}
+
+.add-website-btns button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.95em;
+}
+
+.add-website-btns button:first-child{
+    margin-right: 5px;
+}
+
+.added-category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+    padding: 5px 0;
+    padding-right: 10px;
+
+    -webkit-animation: new-category 0.5s ease-out;
+}
+
+.added-category button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+
+    padding: 0;
+    font-size: 1.1em;
+    width: 1.2em;
+    height: 1.15em;
+    border: none;
+    border-radius: 50%;
+
+    transition-duration: 0.5s;
+}
+
+.added-category button:hover{
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+#add-btn:disabled{
+    opacity: 0.5;
+}
+
+.header-title{
+    margin-left: 10px;
+}

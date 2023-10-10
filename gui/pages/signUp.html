@@ -1,0 +1,47 @@
+<div id="main">
+    <link rel="stylesheet" type="text/css" href="../css/signUp.css">
+
+    <main>
+        <h1>sign up.</h1>
+        <div class="forms">
+            <div id="user-credentials">
+                <input type="text" placeholder="e-mail" id="email">
+                <input type="password" placeholder="password" id="password" maxlength="25">
+                <input type="password" placeholder="same password" id="same-password" maxlength="25"> 
+                <button onclick="goBack()">wait, go back!</button>
+                <button onclick="handleNewAccount()">ok, next!</button>
+            </div>
+            <div id="user-info">
+                <input type="text" placeholder="name" maxlength="35" id="name" style="margin-bottom: 8px;">
+                <div class="gender-div">
+                    <h2 style="margin-bottom: 5px;">gender</h2>
+                    <label>
+                        <input type="radio" name="gender" value="1" checked="true">
+                        <span>Female</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="2">
+                        <span>Male</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="3">
+                        <span>Other</span>
+                    </label>
+                </div>
+                <div>
+                    <h2>birthday</h2>
+                    <input type="date" id="birthday">
+                </div>
+                <button onclick="goBack()">nevermind!</button>
+                <button onclick="saveNewUser()">all set!</button>
+            </div>
+        </div>
+    </main>
+    <div id="error-popup">
+        <button onclick="hideErrorMessage()">&times</button>
+        <p id="error-msg"></p>
+        </p>
+    </div>
+
+    <script type="module" src="../linkers/signUp.js"></script>
+</div>

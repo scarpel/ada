@@ -1,0 +1,140 @@
+@-webkit-keyframes slide-stripe{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes show-button{
+    0%{
+        transform: translate(-200%);
+        opacity: 0;
+        filter: blur(1px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+#main{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgb(241, 241, 241);
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "Poppins";
+    padding: 0 25px;
+    color: rgb(10, 10, 10);
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 5px;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.user-icon{
+    width: 48px;
+    height: 48px;
+}
+
+.header-btns .sign-out{
+    font-weight: 700;
+    margin-left: -5px;
+}
+
+#greeting{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+
+    user-select: none;
+}
+
+b{
+    font-weight: 700;
+    text-transform: none;
+}
+
+.page-btns{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    z-index: 5;
+}
+
+.page-btns button{
+    position: relative;
+    display: block;
+
+    font-size: 4em;
+    color: rgb(10, 10, 10);
+    letter-spacing: -3px;
+    font-weight: 700;
+    padding: 0 10px;
+    margin: 10px 0;
+
+    background-color: transparent;
+    border: none;
+
+    opacity: 0;
+
+    -webkit-animation: show-button 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#news-btn{
+    -webkit-animation-delay: 0.1s;
+}
+
+#agenda-btn{
+    -webkit-animation-delay: 0.2s;
+}
+
+.page-btns button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 0%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    z-index: -1;
+}
+
+.page-btns button:hover{
+    color: rgb(250, 250, 250);
+    transition-delay: 0.25s;
+    transition-duration: 0.2s;
+}
+
+.page-btns button:hover::after{
+    -webkit-animation: slide-stripe 0.4s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}

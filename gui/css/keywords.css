@@ -1,0 +1,87 @@
+@-webkit-keyframes show-up{
+    0%{
+        opacity: 0;
+        margin-right: -50px;
+    }
+    100%{
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+.keywords-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 0;
+}
+
+.keywords-input input{
+    font-family: "Poppins";
+    padding: 5px 10px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.keywords-input button{
+    font-family: "Poppins";
+    background-color: transparent;
+    color: white;
+    background-color: black;
+
+    border: none;
+    border-radius: 10px;
+    height: 31px;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+}
+
+.keywords-input button:hover{
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+.keywords-input input:focus{
+    outline: none;
+}
+
+.keywords-input button:focus{
+    outline: none;
+}
+
+#keyword-tags{
+    margin: 10px auto;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#keyword-articles .articles-1x10{
+    grid-template-columns: minmax(33%, repeat(3,33%));
+}
+
+#keyword-message{
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Poppins";
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+
+    -webkit-animation: show-up 0.5s ease-out;
+
+}
+
+#keyword-articles .status-message{
+    margin-top: 0;
+}

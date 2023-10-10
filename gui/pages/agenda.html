@@ -1,0 +1,101 @@
+<div id="agenda">
+    <link rel="stylesheet" type="text/css" href="../css/agenda.css">
+    <link rel="stylesheet" type="text/css" href="../css/CalendarMonth.css">
+    <link rel="stylesheet" type="text/css" href="../css/CalendarDay.css">
+    <link rel="stylesheet" type="text/css" href="../css/Calendar.css">
+    <link rel="stylesheet" type="text/css" href="../css/EventCard.css">
+    <link rel="stylesheet" type="text/css" href="../css/DayEvents.css">
+    <link rel="stylesheet" type="text/css" href="../css/CustomRoundCheckbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/ToDo.css">
+    <link rel="stylesheet" type="text/css" href="../css/EventMatches.css">
+
+    <div id="schedule-event">
+        <button class="close-schedule" onclick="hideScheduleEvent()">&times;</button>
+        <div class="event-top">
+            <div id="staples">
+                <div class="staple"></div>
+                <div class="staple"></div>
+                <div class="staple"></div>
+                <div class="staple"></div>
+                <div class="staple"></div>
+            </div>
+            <div id="holes">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+        </div>
+        <div class="event-set">
+            <div id="fast-fill" class="fast-fill">
+                <input type="text" id="fast-fill-input" placeholder="Fast Fill">
+                <button class="fast-fill-btn" onclick="checkFastFillSyntax()">Go!</button>
+            </div>
+            <div id="fast-fill-message"></div>
+            <div class="event-info">
+                <div class="event-info-field event-input-title">
+                    <span class="event-info-title">Title</span>
+                    <input type="text" id="input-title" required>
+                </div>
+                <div class="event-info-double">
+                    <div class="event-info-left">
+                        <div class="event-info-field">
+                            <span class="event-info-title">Start At</span>
+                            <input type="datetime-local" id="start-at">
+                        </div>
+                        <div class="event-info-field">
+                            <span class="event-info-title">End At</span>
+                            <input type="datetime-local" id="end-at">
+                        </div>
+                    </div>
+                    <div class="event-info-right">
+                        <div>
+                            <div id="priority-field" class="event-info-field">
+                                <span class="event-info-title">Priority</span>
+                                <div id="priority-status">Normal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-btns">
+            <button onclick="saveEvent()">Save Event</button>
+            <button onclick="clearScheduleFields()">Clean Fields</button>
+        </div>
+    </div>
+    
+    <main id="main">
+        <div class="agenda-top">
+            <div class="top-btns">
+                <button class="go-back-btn" onclick="goBack()">< go back</button>
+                <div class="header-btns">
+                    <button class="add-event-btn" onclick="showScheduleEvent()">Add Event</button>
+                </div>
+            </div>
+            <h1 class="header-title">agenda.</h1>
+        </div>
+        <div id="agenda-bottom" class="page-bottom">
+            <div id="page-selector">
+                <button id="calendar-page" class="above-selector" onclick="moveSlider(false)">Calendar</button>
+                <button id="todo-page" onclick="moveSlider()">To Do</button>
+                <div id="selector-slider"></div>
+            </div>
+            <div id="quick-agenda">
+                <input type="text" id="quick-agenda-input" placeholder="Quick Agenda">
+                <button class="quick-agenda-btn" onclick="checkQuickAgendaSyntax()">Go!</button>
+            </div>
+            <div id="quick-agenda-message"></div>
+            <div id="calendar-content">
+                <div id="calendar"></div>
+                <div id="events"></div>
+            </div>
+            <div id="all-todos">
+
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../linkers/agenda.js"></script>
+</div>

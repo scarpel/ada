@@ -1,0 +1,82 @@
+.event-card{
+    position: relative;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(126, 94, 94, 0.4);
+
+    padding: 10px;
+    padding-left: 20px;
+
+    font-family: "Poppins";
+}
+
+.event-priority{
+    position: absolute;
+
+    top: 7px;
+    bottom: 7px;
+    left: 6px;
+
+    width: 6px;
+
+    border-radius: 10px;
+}
+
+.priority-1{
+    background-color: rgb(37, 228, 85);
+}
+
+.priority-2{
+    background-color: rgb(252, 255, 77);
+}
+
+.priority-3{
+    background-color: rgb(255, 37, 37);
+}
+
+.event-title{
+    font-family: "Poppins";
+    display: block;
+    font-size: 1.2em;
+    margin: 0;
+    margin-right: 15px;
+    font-weight: 700;
+
+    border: 0;
+}
+
+.event-title:focus{
+    outline: none;
+}
+
+.event-time{
+    opacity: 0.7;
+    font-size: 1em;
+    margin-top: -5px;
+}
+
+.event-delete-btn{
+    position: absolute;
+
+    right: 5px;
+    top: 5px;
+
+    font-size: 1.2em;
+    font-weight: 600;
+
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+
+    border: none;
+    background-color: transparent;
+    opacity: 0.4;
+    transition-duration: 0.25s;
+}
+
+.event-delete-btn:hover{
+    opacity: 0.7;
+}

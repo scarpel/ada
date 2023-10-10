@@ -1,0 +1,106 @@
+:root{
+    --check-color: white;
+}
+
+@-webkit-keyframes left-bar{
+    0%{
+        box-shadow: inset 0 0 0 0.01px var(--check-color);
+    }
+    100%{
+        box-shadow: inset 0.4em 0 var(--check-color);
+    }
+}
+
+@-webkit-keyframes right-bar{
+    0%{
+        box-shadow: inset 0 0 0 0.01px var(--check-color);
+    }
+    100%{
+        box-shadow: inset 0 0.7em var(--check-color);
+    }
+}
+
+.round-checkbox{
+    display: block;
+    position: relative;
+
+    font-size: 30px;
+    width: 1em;
+    height: 1em;
+}
+
+.round-checkbox:hover input ~ .checkmark{
+    background-color: rgb(179, 179, 179);
+}
+
+.round-checkbox input:checked ~ .checkmark{
+    background-color: rgb(38, 120, 226);
+    border-color: transparent;
+}
+
+.round-checkbox:hover input:checked ~ .checkmark{
+    background-color: rgb(17, 108, 184);
+}
+
+.checkbox{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+
+    background-color: rgb(221, 221, 221);
+    transition-duration: 0.5s;
+    border-radius: 50%;
+    border: 0.1em solid rgb(211, 211, 211);
+}
+
+.checkmark:before{
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0.1em;
+    display: none;
+
+    width: 0.4em;
+    height: 0.2em;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    
+    transform: rotate(-135deg);
+
+    -webkit-animation: left-bar 0.25s 0.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.checkmark:after{
+    content: "";
+    position: absolute;
+    top: 0.15em;
+    right: 0.35em;
+    display: none;
+
+    background-color: transparent;
+    width: 0.2em;
+    height: 0.7em;
+    border-radius: 5px;
+
+    transform: rotate(45deg);
+
+    -webkit-animation: right-bar 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.round-checkbox input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.round-checkbox input:checked ~ .checkmark:before{
+    display: block;
+}

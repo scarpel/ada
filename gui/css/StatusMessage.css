@@ -1,0 +1,23 @@
+.status-message{
+    width: 70%;
+    max-width: 450px;
+
+    margin: 20px auto;
+    /* margin-bottom: 0; */
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.status-message-title, .status-message-text{
+    margin: 0;
+}
+
+.status-message-title{
+    margin-bottom: 5px;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.status-message em{
+    font-weight: 700;
+}

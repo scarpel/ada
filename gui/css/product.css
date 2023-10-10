@@ -1,0 +1,439 @@
+@-webkit-keyframes fall{
+    0%{
+        transform: translateY(-40px);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    } 
+}
+
+@-webkit-keyframes clib{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    } 
+}
+
+body{
+    font-family: "Poppins";
+}
+
+.product{
+    position: relative;
+}
+
+header{
+    display: flex;
+
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 50px;
+    max-width: 700px;
+
+    z-index: 5;
+}
+
+main{
+    position: relative;
+    z-index: 5;
+}
+
+.strip{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    background-color: transparent;
+}
+
+.top{
+    margin: 5px 0;
+}
+
+.back-btn{
+    font-size: 0.9em;
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.header-left{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: deeppink; */
+}
+
+#product-img{
+    object-fit: contain;
+    max-width: 270px;
+    max-height: 200px;
+}
+
+.header-right{
+    margin-left: 10px;
+    /* background-color: darkslategray; */
+}
+
+#favicon{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+#website-name{
+    font-size: 1em;
+}
+
+#product-name-a, #website-name{
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-related{
+    margin-right: 20px;
+}
+
+.website-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#product-name{
+    font-weight: 600;
+    margin: 2px 0 5px 0;
+    font-size: 2em;
+    line-height: 34px;
+    letter-spacing: -1px;
+}
+
+#product-price{
+    font-size: 1.5em;
+    /* background-color: rgb(245, 245, 245); */
+}
+
+#website-btn{
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 0.95em;
+    padding: 9px 18px;
+
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+#website-btn:hover:after{
+    bottom: -8px;
+    left: 8px;
+}
+
+#website-btn::after{
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 2px;
+    transition-duration: 0.3s;
+
+    bottom: -6px;
+    left: 6px;
+}
+
+#website-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.product-related-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+#price-info-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+
+    user-select: none;
+}
+
+.lowest-price-card, .highest-price-card{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    padding: 10px;
+    padding-right: 30px;
+
+    /* background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+    box-shadow: 1px 4px 12px rgba(48, 48, 48, 0.2); */
+}
+
+.lowest-price-card{
+    margin-right: 50px;
+}
+
+.price-card-arrow{
+    font-family: "Poppins";
+    font-size: 1.6em;
+    margin-right: 3px;
+    opacity: 0;
+    
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.1s;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+.lowest-price-card .price-card-arrow{
+    color: rgb(40, 212, 97);
+    -webkit-animation-name: fall;
+}
+
+.highest-price-card .price-card-arrow{
+    color: rgb(204, 46, 46);
+    -webkit-animation-name: clib;
+}
+
+.price-card-text div{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding-left: 20%;
+    width: 100%;
+}
+
+.price-card-text h2{
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: -5px;
+    overflow-wrap: normal;
+    user-select: text;
+}
+
+.price-differences div, .price-graph{
+    background-color: rgb(250, 250, 250);
+    color: rgb(8, 8, 8);
+    border: 2px solid rgb(8, 8, 8);
+    padding: 7.5px 18px;
+    border-radius: 15px;
+    font-size: 1em;
+    box-shadow: 4px 4px 0 rgb(8, 8, 8);
+}
+
+.price-graph{
+    height: 115px;
+    margin-left: 15px;
+    width: 250px;
+}
+
+/* 
+.price-differences div{
+    font-size: 1.15em;
+    font-weight: 600;
+} */
+
+.price-percentage{
+    text-align: center;
+}
+
+.percentage{
+    font-size: 0.8em;
+    padding: 2px 7px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.lower{
+    border: 2px solid rgb(28, 240, 64);
+    background-color: transparent;
+    color: rgb(28, 240, 64);
+}
+
+.higher{
+    border: 2px solid rgb(236, 38, 38);
+    background-color: transparent;
+    color: rgb(236, 38, 38);
+}
+
+.price-value{
+    padding: 0 15px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+tr{
+    text-align: center;
+    transition-duration: 0.5s;
+    margin: 5px;
+}
+
+tr:hover{
+    background-color: rgba(128,128,128,0.2);
+}
+
+td{
+    padding: 3px 5px;
+}
+
+#table-top, .graph-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 0;
+}
+
+#table-top h2, .graph-top h2{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#prices-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    padding-bottom: 5px;
+}
+
+#price-info-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: flex-start;
+    justify-items: space-between;
+
+    width: 80%;
+    margin: auto;
+}
+
+.graph{
+    padding-bottom: 10px;
+}
+
+#price-graph{
+    display: flex;
+    max-width: 95%;
+}
+
+.last-n{
+    font-size: 1.1em;
+}
+
+.last-n span{
+    font-size: 1em;
+}
+
+.last-n select{
+    font-family: "Poppins";
+    font-size: 1em;
+    text-decoration: underline;
+    color: rgba(15, 15, 15, 0.6);
+
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.last-n select:focus{
+    outline: none;
+}
+
+.update-rate-container{
+    display: flex;
+    align-items: center;
+}
+
+.update-rate-container p{
+    font-size: 0.95em;
+    width: 200px;
+    user-select: none;
+    margin: 10px 0;
+    padding-right: 10px;
+}
+
+.counter-add-btn, .counter-minus-btn{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    padding: 0;
+    line-height: 5px;
+
+    width: 1.1em;
+    height: 1.1em;
+    font-size: 1.3em;
+    
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.counter-add-btn:hover, .counter-minus-btn:hover{
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+.counter-add-btn:disabled, .counter-minus-btn:disabled{
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.counter-add-btn:disabled:hover, .counter-minus-btn:disabled:hover{
+}
+
+.counter-text{
+    border: none;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.1em;
+
+    width: 55px;
+}
+
+.counter-text:focus{
+    outline: none;
+}
+
+.counter{
+    display: flex;
+    margin-left: -15px;
+}
+
+#save-update-btn{
+    border: none;
+    border-radius: 3px;
+
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    padding: 4px 8px;
+    margin-left: 10px;
+}

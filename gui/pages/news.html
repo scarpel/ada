@@ -1,0 +1,108 @@
+<div id="news">
+    <link rel="stylesheet" type="text/css" href="../css/news.css">
+    <link rel="stylesheet" type="text/css" href="../css/NewNewsWebsite.css">
+    <link rel="stylesheet" type="text/css" href="../css/UnknownNewsWebsite.css">
+    <link rel="stylesheet" type="text/css" href="../css/CustomRoundCheckbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/ArticleXX1X.css">
+    <link rel="stylesheet" type="text/css" href="../css/Article1X10.css">
+    <link rel="stylesheet" type="text/css" href="../css/keywords.css">
+    <link rel="stylesheet" type="text/css" href="../css/KeywordTag.css">
+    <link rel="stylesheet" type="text/css" href="../css/KeywordArticles.css">
+    <link rel="stylesheet" type="text/css" href="../css/StatusMessage.css">
+    <link rel="stylesheet" type="text/css" href="../css/NewsWebsiteElement.css">
+
+    <div id="new-info">
+        <div class="switch-btns">
+            <button id="left-btn" onclick="changeSlider()">Unknown Websites</button>
+            <button id="right-btn" onclick="changeSlider(false)">Known Websites</button>
+            <div id="slider"></div>
+        </div>
+        
+        <div class="gathered-websites">
+            <div id="unknown-websites"></div>
+            <div id="known-websites"></div>
+        </div>
+
+        <div class="new-info-btns">
+            <button id="addToNewsBtn" onclick="handle_addToNews()" disabled>add websites</button>
+            <button onclick="handle_CancelNewInfo()" >no, cancel</button>
+        </div>
+    </div>
+
+    <div id="manage-websites">
+        <div class="manage-websites-text">
+            <h1>Your News Websites</h1>
+            <p>Remove a category or a whole website by clicking on the <span>&times;</span></p>
+        </div>
+        <div id="all-websites">
+
+        </div>
+        <div class="manage-websites-btns">
+            <button onclick="hideManageWebsites()">all done!</button>
+        </div>
+    </div>
+
+    <div id="add-website">
+        <!-- <p>Inform the news website URL and the URL of the categories you want to add!</p> -->
+        <div class="website-display">
+            <h1>News Website</h1>
+            <input type="text" placeholder="News Website URL" id="add-website-input" onkeyup="handleOnKeyPressAddInput(event)" onblur="handleOnKeyPressAddInput(event)">
+        </div>
+        <div class="categories-container">
+            <div class="categories-top">
+                <h1>Categories</h1>
+                <button onclick="handleAddCategory()">+ Add</button>
+            </div>
+            <div id="categories-display"></div>
+        </div>
+        <div class="add-website-btns">
+            <button onclick="handleAddNewsWebsite()" id="add-btn">add website</button>
+            <button onclick="hideAddWebsite()">cancel</button>
+        </div>
+    </div>
+
+    <main id="main">
+        <div id="news-top">
+            <div class="top-bar">
+                <button class="go-back-btn" onclick="goBack()">< go back</button>
+                <div class="header-btns">
+                    <button id="add-website-btn" onclick="showAddWebsite()">Add Website</button>
+                    <button onclick="handleManageWebsites()" id="manage-websites-btn">Manage Websites</button>
+                    <button onclick="scanHistory()" id="scan-history-btn">Scan History</button>
+                </div>
+            </div>
+            <h1 class="header-title">news.</h1>
+            <div class="last-update">
+                last update at <span id="last-update-hour">--:--</span>
+                <button onclick="update_news()"></button>
+            </div>
+        </div>
+        <div id="news-bottom" class="page-bottom">
+            <div class="news-bottom-top">
+                <div id="sections">
+                    <button class="section above-bar" id="section-left" onclick="changeSectionBar(true)">Articles</button>
+                    <button class="section" id="section-right" onclick="changeSectionBar()">Keywords</button>
+                    <div class="section-bar" id="section-bar"></div>
+                </div>
+            </div>
+            <div id="articles">
+                <div id="articles-top"></div>
+                <div id="articles-bottom">
+                </div>
+            </div>
+            <div id="keywords">
+                <div class="keywords-top">
+                    <div class="keywords-input">
+                        <input type="text" id="keyword" placeholder="Keyword">
+                        <button onclick="handleAddKeyword()">Add</button>
+                    </div>
+                    <div id="keyword-message"></div>
+                    <div id="keyword-tags"></div>
+                    <div id="keyword-articles"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type="module" src="../linkers/news.js"></script>
+</div>

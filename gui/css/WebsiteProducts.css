@@ -1,0 +1,22 @@
+.website{
+    padding: 0 5px;
+}
+
+.website .name{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.domain{
+    font-size: 0.8em;
+    opacity: 0.65;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.website .products-set{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}

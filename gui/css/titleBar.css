@@ -1,0 +1,50 @@
+:root{
+    --title-bar-btn-color: black;
+}
+
+#title-bar{
+    background-color: inherit;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+.window-btns{
+    -webkit-app-region: no-drag;
+    width: auto;
+}
+
+.window-btns button{
+    margin: 0;
+	width: 48px;
+	height: 32px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+.window-btns button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.window-btns button:focus{
+    outline: none;
+}
+
+#close-btn:hover{
+    background: #e81123;
+}
+
+.window-btns svg path, 
+.window-btns svg rect, 
+.window-btns svg polygon {
+	fill: var(--title-bar-btn-color);
+}
+
+.window-btns svg {
+    width: 11px;
+    height: 11px;
+}

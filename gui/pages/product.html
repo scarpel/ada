@@ -1,0 +1,79 @@
+<div class="product">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/OddPageSelector.css">
+
+    <script type="module" src="../linkers/product.js"></script>
+
+    <div class="strip"></div>
+    <div class="top">
+        <button class="back-btn" onclick="goBack()">< Go back</button>
+    </div>
+    <header>
+        <div class="header-left">
+            <img src="" id="product-img" alt="Product's Image">
+        </div>
+        <div class="header-right">
+            <div class="product-related">
+                <div class="website-info">
+                    <img id="favicon" src="" alt="Favicon">
+                    <a id="website-name" href="#"></a>
+                </div>
+                <a id="product-name-a" href="#"><h1 id="product-name"></h1></a>
+                <span id="product-price"></span>
+                <div class="update-rate-container">
+                    <p>Update price after how many days?</p>
+                    <div id="update-rate"></div>
+                </div>
+            </div>
+            <div class="product-related-bottom">
+                <button id="website-btn">Go To Website</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="price-info-top">
+            <div class="lowest-price-card">
+                <div class="price-card-arrow">
+                    &darr;
+                </div>
+                <div class="price-card-text">
+                    <h2 id="lowest-price"></h2>
+                    <div>Lowest Price</div>
+                </div>
+            </div>
+            <div class="highest-price-card">
+                <div class="price-card-arrow">
+                    &uarr;
+                </div>
+                <div class="price-card-text">
+                    <h2 id="highest-price"></h2>
+                    <div>Highest Price</div>
+                </div>
+            </div>
+        </div>
+        <div id="price-info-bottom">
+            <div class="table">
+                <div id="table-top">
+                    <h2>Prices</h2>
+                    <div id="prices-page-selector"></div>
+                </div>
+                <div id="prices-table"></div>
+            </div>
+            <div class="graph">
+                <div class="graph-top">
+                    <h2>Price Variation</h2>
+                    <div class="last-n">
+                        <span>last</span>
+                        <select id="time-select" onchange="handleSelectChange(event)">
+                            <option value="0" selected>30 days</option>
+                            <option value="1">60 days</option>
+                            <option value="2">6 months</option>
+                            <option value="3">1 year</option>
+                        </select>
+                    </div>
+                </div>
+                <canvas id="price-graph"></canvas>
+            </div>
+        </div>
+    </main>
+</div>

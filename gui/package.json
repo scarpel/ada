@@ -1,0 +1,38 @@
+{
+  "name": "ada",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "SPA",
+    "Ada"
+  ],
+  "author": "Guilherme H. Scarpel",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-rebuild": "^1.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "argon2": "^0.27.0",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "better-sqlite3": "^7.0.1",
+    "chart.js": "^2.9.3",
+    "file-saver": "^2.0.2",
+    "jquery": "^3.5.1",
+    "open": "^7.0.4",
+    "puppeteer": "^3.0.4",
+    "puppeteer-cluster": "^0.20.0",
+    "python-shell": "^2.0.0",
+    "request": "^2.88.2",
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
+  }
+}

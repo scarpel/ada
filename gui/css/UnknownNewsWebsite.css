@@ -1,0 +1,25 @@
+.unknown-website-info{
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+
+    user-select: none;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.website-info-right{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.enabled{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.selected{
+    box-shadow: 0 0 12px rgb(100, 93, 81, 0.4);
+}
